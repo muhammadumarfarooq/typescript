@@ -15,7 +15,6 @@ axios.get(url)
     const id = post.id;
     const title = post.title;
     logPost(id, title);
-    
   });
 
 // type annotation
@@ -23,5 +22,5 @@ const logPost = (id: number, title: string) => {
   console.log(`
         Post id is: ${id}
         Post title is: ${title}
-      `);
+  `);
 }
