@@ -13,7 +13,24 @@ let colors: string[] = ['red', 'green', 'blue'];
 let myNumbers: number[] = [1, 2, 3];
 let truths: boolean[] = [true, true, false];
 
+//classes
+class Car {
 
+}
+
+const car: Car = new Car();
+
+//Object literal
+const point: { x: number; y: number } = {
+  x: 12,
+  y: 15,
+}
+
+// Annotations around functions
+
+const logNumber: (i: number) => void = (i: number) => {
+  console.log(i);
+}
 
 
 
