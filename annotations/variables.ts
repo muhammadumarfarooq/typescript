@@ -36,5 +36,29 @@ const logNumber: (i: number) => void = (i: number) => {
 // 1) Function that returns the any type
 
 const json = '{"x": 10, "y": 20}';
-const coordinates: {x: number; y: number} = JSON.parse(json);
+const coordinates: { x: number; y: number } = JSON.parse(json);
 console.log(coordinates);
+
+//2)When initialization and declaration are on different lines
+const words = ["red", "green", "blue"];
+// let foundColor = false;
+let foundColor: boolean;
+
+//inferred from usage: write annotaion or initialize it on the same line.
+
+for ( let i = 0; i++; i < words.length ) {
+  if ( words[ i ] === "green" ) {
+    foundColor = true;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
