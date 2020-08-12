@@ -52,6 +52,20 @@ for ( let i = 0; i++; i < words.length ) {
   }
 }
 
+// Variables whose type cannot be inferred correctly
+//bad code (because we define type inference of two types) but we have cases
+const numbers = [-10, -14, 5];
+let numberGreaterThanZero: boolean | number = false;
+
+for ( var i = 0; i < numbers.length; i++ ) {
+  if ( numbers[ i ] > 0 ) {
+    numberGreaterThanZero = numbers[ i ]
+  }
+}
+
+
+
+
 
 
 
