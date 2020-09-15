@@ -24,3 +24,24 @@ const logPost = (id: number, title: string) => {
         Post title is: ${title}
   `);
 }
+
+//Destructuring with Annotations
+
+const todaysWeather = {
+  date: new Date(),
+  weather: "sunny"
+};
+
+const logWeather = (forecast: { date: Date, weather: string }): void => {
+  console.log(forecast.date);
+  console.log(forecast.weather);
+}
+
+logWeather(todaysWeather);
+
+
+
+
+
+
+
