@@ -25,17 +25,10 @@ const logPost = (id: number, title: string) => {
   `);
 }
 
-//Destructuring with Annotations
 
-const todaysWeather = {
-  date: new Date(),
-  weather: "sunny"
-};
-
-const logWeather = ({ date, weather }: { date: Date, weather: string }): void => {
-  console.log(date);
-  console.log(weather);
-}
-
-logWeather(todaysWeather);
-
+/* TOPICS FOR THE TYPESCRIPT
+* Using interface (interface is used to define the structure of an object)
+* Using type annotation in function arguments
+* Annotation with variables
+* Annotation around Objects
+* */
